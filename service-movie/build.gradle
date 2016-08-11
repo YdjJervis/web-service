@@ -1,5 +1,5 @@
-apply plugin: 'java'
 apply plugin: 'war'
+apply plugin: "jetty"
 
 dependencies {
     //导入本地的依赖包
@@ -10,4 +10,9 @@ dependencies {
     compile 'ch.qos.logback:logback-classic:1.1.3'
     compile 'org.springframework:spring-webmvc:4.1.6.RELEASE'
     compile 'javax.servlet:jstl:1.2'
+    compile "javax.servlet:servlet-api:2.5"
 }
+
+httpPort = 8080
+stopPort = 9090
+stopKey = "stopKey"
