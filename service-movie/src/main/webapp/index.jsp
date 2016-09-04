@@ -11,6 +11,11 @@
     <title>首页</title>
 </head>
 <body>
-    Hello World！！！
+    <form action="/movies">
+
+        <input name="Name" value="Value">
+        <input type="submit" value="提交">
+
+    </form>
 </body>
 </html>
